@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.countries__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px;
+}
+
+.countries__input-label {
+  margin: 0px 20px;
+  font-size: 48px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+}
+
+.countries__input-field {
+  padding: 2px;
+  max-width: 500px;
+  height: 40px;
+  font-size: 36px;
+  text-align: center;
+  border-radius: 10px;
+  border-top-color: cornflowerblue;
+}
+
+.countries-list__item:hover {
+  font-size: 34px;
+}
+
+#countries-list:first-child:hover {
+  background-color: seashell;
+}
+
+.countries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 40px;
+}
+
+.countries__main-info {
+  max-width: 350px;
+  padding: 25px;
+}
+
+.countries__heading {
+  padding: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.countries__item-heading {
+  padding: 20px;
+  font-size: 12px;
+}
+
+.countries__headers-value {
+  width: 500;
+  font-size: 24px;
+}
+
+.countries__flag img {
+  width: 100%;
+}
+
+.countries__info {
+  text-align: right;
+  width: 500px;
+  padding-top: 200px;
+  padding: 40px;
+  font-size: 24px;
+}
+
+.countries__languages-list {
+  display: block;
+}
+
+.country-languages-item {
+  margin-left: 60px;
+}
+
+.countries-list:first-child:hover {
+  background-color: aquamarine;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto;
+  background-color: seashell;
+}
+
+h1 {
+  font-size: 48px;
+}
+/*# sourceMappingURL=main.css.map */
