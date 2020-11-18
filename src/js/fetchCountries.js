@@ -9,8 +9,8 @@ export default class FetchCountries {
   getCountryListWithSamePartOfName() {
     return fetch(`https://restcountries.eu/rest/v2/name/${this.searchQuery}`)
       .then(
-          res => res.json(),
-          res => res.status)
+        res => res.json(),
+        res => res.status)
       .then(countries => {return countries;})
       .catch(error=> notification('error', "Enter country name!"))
   }

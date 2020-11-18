@@ -3,23 +3,25 @@
   <h1 class="countries__heading">{{name}}</h1>
   <div class="countries__info-wrap">
     <div class="countries__info">
-      <p class="countries__item-heading">
-        <p class="countries__headers-value">Capital:</p>
-        {{capital}}
+      <p>
+        <h2 class="countries__item-heading" >Capital:</h2>
+        <span class="countries__headers-value">{{capital}}</span>
       </p>
-      <p class="countries__item-heading">
-        <p class="countries__headers-value">Population:</p>
-        {{population}}
+      <p>
+        <h2 class="countries__item-heading">Population:</h2>
+        <span class="countries__headers-value">{{population}}</span>
       </p>
-      <ul class="countries__item-heading">
-        <p class="countries__headers-value">Languages:</p>
-        {{#each languages}}
-        <li class="countries__headers-value">{{name}}</li>
-        {{/each}}
-      </ul>
+      <p>
+        <h2 class="countries__item-heading">Languages:</h2>
+        <ul class="countries__headers-value">
+          {{#each languages}}
+            <li class="countries__list-item">{{name}}</li>
+          {{/each}}
+        </ul>
+      </p>
     </div>
     <div class="countries__main-info">
-        <img class="countries__flag" src="{{flag}}" alt="flag of {{name}}">
+      <img class="countries__flag" src="{{flag}}" alt="flag of {{name}}">
     </div>
   </div>
 </article>
