@@ -12,6 +12,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-image: url(../src/images/bg-pattern.png);
+}
+
 a {
   text-decoration: none;
 }
@@ -60,7 +64,7 @@ li {
   border-top-color: cornflowerblue;
 }
 
-.countries-list__item:hover {
+.countries-list__item-dropdown {
   font-size: 34px;
 }
 
@@ -69,6 +73,10 @@ li {
 }
 
 .countries {
+  margin: 20px 40px;
+}
+
+.countries__info-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,18 +86,17 @@ li {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px 40px;
 }
 
 .countries__main-info {
+  display: block;
   max-width: 350px;
   padding: 25px;
 }
 
 .countries__heading {
+  margin-right: auto;
+  margin-left: auto;
   padding: 20px;
   font-size: 36px;
   text-transform: uppercase;
@@ -110,7 +117,8 @@ li {
 }
 
 .countries__info {
-  text-align: right;
+  display: block;
+  text-align: left;
   width: 500px;
   padding-top: 200px;
   padding: 40px;
@@ -133,6 +141,18 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.countries__geted-list {
+  text-align: left;
+}
+
+.countries__geted-list-values {
+  font-size: 18px;
+}
+
+.countries-list__item {
+  font-size: 18px;
 }
 
 html {

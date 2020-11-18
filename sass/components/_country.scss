@@ -1,17 +1,27 @@
 .countries {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  // display: block;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
   margin: 20px 40px;
 }
 
+.countries__info-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .countries__main-info{
+  display: block;
   max-width: 350px;
-    padding: 25px;
+  padding: 25px;
 }
 
 .countries__heading {
+  // display: inline;
+  margin-right: auto;
+  margin-left: auto;
   padding: 20px;
 
   font-size: 36px;
@@ -33,7 +43,8 @@
 }
 
 .countries__info {
-  text-align: right;
+  display: block;
+  text-align: left;
   width: 500px;
   padding-top: 200px;
   padding: 40px;

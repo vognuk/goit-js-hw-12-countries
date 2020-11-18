@@ -1,4 +1,5 @@
 import { error } from "@pnotify/core";
+import { notification } from './notification';
 
 export default class FetchCountries {
   constructor() {
@@ -7,11 +8,11 @@ export default class FetchCountries {
 
   getCountryListWithSamePartOfName() {
     return fetch(`https://restcountries.eu/rest/v2/name/${this.searchQuery}`)
-          .then(
-              res => res.json(),
-              res => res.status)
-          .then(countries => {return countries;})
-          .catch(error=> console.log(error))
+      .then(
+          res => res.json(),
+          res => res.status)
+      .then(countries => {return countries;})
+      .catch(error=> notification('error', "Enter country name!"))
   }
 
   checkInput() {
